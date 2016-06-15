@@ -1,0 +1,14 @@
+<h1>CREATE TENENT <%= show.id %></h1>
+
+<form action="/tenants" method="post">
+<input type="text" name="name" placeholder="enter tenant name" value="<%= show.name %>">
+<input type="submit">
+</form>
+<form action="/types/new" method="get">
+<input type="hidden" name="type" value="<%= show.id %>">
+<input type="submit" value ="type">
+</form>
+<form action="/fields/new" method="get">
+<input type="hidden" name="field" value="<%= show.id %>">
+<input type="submit" value ="field">
+</form>

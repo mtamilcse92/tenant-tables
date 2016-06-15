@@ -1,0 +1,7 @@
+<h1>CREATE TYPE <%= type.id %></h1>
+
+<form action="/types" method="post">
+<input type="text" name="entityType" placeholder="entityType">
+<input type="hidden" name="type" value="<%= type.id %>">
+<input type="submit">
+</form>

@@ -1,0 +1,8 @@
+<h1>CREATE ENTITY <%= field.id %></h1>
+
+<form action="/fields" method="post">
+<input type="text" name="entityType" placeholder="entityType">
+<input type="text" name="entityName" placeholder="entityName">
+<input type="hidden" name="field" value="<%= field.id %>">
+<input type="submit">
+</form>
